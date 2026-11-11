@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Inkspire</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <nav class="nav container">
+
+        <a class="logo" href="index.html">
+            <span>i</span> inkspire.
+        </a>
+
+        <button class="menu-btn">☰</button>
+
+        <div class="nav-links">
+            <a href="index.html">Explore</a>
+            <a class="active" href="dashboard.html">My dashboard</a>
+        </div>
+
+        <div class="nav-actions">
+            <span id="userGreeting" class="greeting"></span>
+            <button class="btn btn-outline" id="logoutBtn">
+                Log out
+            </button>
+        </div>
+
+    </nav>
+
+</header>
+
+<main class="container dashboard-main">
+
+    <div class="dash-heading">
+
+        <div>
+            <span class="eyebrow">YOUR WORKSPACE</span>
+
+            <h1>
+                Your ideas, <em>in progress.</em>
+            </h1>
+
+            <p class="muted">
+                Manage your stories and keep creating.
+            </p>
+        </div>
+
+        <a href="create-blog.html" class="btn btn-primary">
+            ＋ Write a story
+        </a>
+
+    </div>
+
+    <div class="stats">
+
+        <article>
+            <span>✍</span>
+            <small>Total stories</small>
+            <strong id="totalBlogs">0</strong>
+        </article>
+
+        <article>
+            <span>◷</span>
+            <small>Recently created</small>
+            <strong id="recentBlogs">0</strong>
+        </article>
+
+        <article>
+            <span>✦</span>
+            <small>Your status</small>
+            <strong>Creator</strong>
+        </article>
+
+    </div>
+
+    <div class="list-heading">
+
+        <div>
+            <span class="eyebrow">YOUR COLLECTION</span>
+            <h2>My stories</h2>
+        </div>
+
+        <a class="text-link" href="index.html">
+            Explore stories ↗
+        </a>
+
+    </div>
+
+    <div class="blog-grid" id="dashboardBlogGrid"></div>
+
+    <p id="emptyState" class="empty" hidden>
+        You haven't published a story yet.
+        <a href="create-blog.html">Write your first one →</a>
+    </p>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <a class="logo" href="index.html">
+            <span>i</span> inkspire.
+        </a>
+        <small>© <span id="year"></span> Inkspire.</small>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

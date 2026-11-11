@@ -1,0 +1,152 @@
+.auth-page {
+    min-height: 100vh;
+    background: #f4f0f9;
+    padding: 24px;
+}
+
+.auth-logo {
+    display: block;
+    width: min(1100px, 100%);
+    margin: 0 auto 18px;
+}
+
+.auth-shell {
+    max-width: 1100px;
+    min-height: 650px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.auth-art {
+    background: #382951;
+    color: white;
+    padding: 58px 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-art h1 {
+    font-size: 56px;
+    margin: 20px 0;
+}
+
+.auth-art h1 em {
+    color: #d3bdf4;
+}
+
+.auth-art p {
+    color: #d9d0e4;
+}
+
+.auth-art blockquote {
+    margin: 55px 0 0;
+    padding-top: 18px;
+    border-top: 1px solid #ffffff40;
+    font: 18px 'Playfair Display';
+    max-width: 350px;
+}
+
+.auth-art blockquote small {
+    display: block;
+    font: 11px 'DM Sans';
+    color: #cbbddd;
+    margin-top: 10px;
+}
+
+.register-art {
+    background: #59417b;
+}
+
+.auth-panel {
+    display: grid;
+    place-items: center;
+    padding: 45px;
+}
+
+.auth-form {
+    width: min(100%, 390px);
+}
+
+.auth-form h2 {
+    font: 700 35px 'Playfair Display';
+    margin: 10px 0 3px;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.auth-form > .muted {
+    font-size: 12px;
+    margin: 0 0 24px;
+}
+
+.auth-form label,
+.editor label {
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    margin: 15px 0;
+    color: var(--ink);
+}
+
+.auth-form input,
+.editor input,
+.editor select,
+.editor textarea {
+    display: block;
+    width: 100%;
+    margin-top: 7px;
+    padding: 12px 13px;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: #fdfcff;
+    outline: none;
+    font-size: 13px;
+}
+
+.auth-form input:focus,
+.editor input:focus,
+.editor select:focus,
+.editor textarea:focus {
+    border-color: var(--purple);
+    box-shadow: 0 0 0 3px #7354b817;
+}
+
+.full {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.message {
+    min-height: 18px;
+    font-size: 11px;
+    color: #b34b62;
+}
+
+.message.success {
+    color: #21865d;
+}
+
+.switch,
+.back {
+    font-size: 11px;
+    text-align: center;
+    color: var(--muted);
+}
+
+.switch a {
+    color: var(--purple);
+    font-weight: 800;
+}
+
+.back {
+    display: block;
+    margin-top: 17px;
+}

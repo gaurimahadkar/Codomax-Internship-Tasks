@@ -1,0 +1,272 @@
+@media(max-width:850px) {
+
+    .hero {
+        gap: 10px;
+    }
+
+    .hero-art {
+        transform: scale(.86);
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .auth-art {
+        padding: 40px 30px;
+    }
+
+    .auth-panel {
+        padding: 30px;
+    }
+}
+
+@media(max-width:640px) {
+
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    .header {
+        height: 68px;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .menu-btn {
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 67px;
+        left: 0;
+        right: 0;
+        padding: 18px 22px;
+        background: white;
+        border-bottom: 1px solid var(--line);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-actions {
+        gap: 6px;
+    }
+
+    .nav-actions .btn {
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 48px;
+        padding-bottom: 35px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .lead {
+        font-size: 14px;
+    }
+
+    .hero-art {
+        width: 100%;
+        height: 330px;
+        transform: scale(.78);
+        transform-origin: top center;
+        margin: 15px 0 -45px;
+    }
+
+    .paper {
+        width: 250px;
+        height: 300px;
+    }
+
+    .tag-a {
+        right: -8px;
+    }
+
+    .tag-b {
+        left: -8px;
+    }
+
+    .value-grid {
+        gap: 5px;
+        padding: 17px 0;
+    }
+
+    .value-grid b {
+        font-size: 11px;
+    }
+
+    .value-grid span {
+        font-size: 9px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-head,
+    .cta-inner,
+    .dash-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .section-head h2 {
+        font-size: 39px;
+    }
+
+    .filters {
+        gap: 6px;
+    }
+
+    .filters b {
+        width: 100%;
+    }
+
+    .filter {
+        font-size: 10px;
+        padding: 7px 10px;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-cover {
+        height: 200px;
+    }
+
+    .cta {
+        padding: 50px 0;
+    }
+
+    .cta h2 {
+        font-size: 40px;
+    }
+
+    .footer-inner {
+        flex-wrap: wrap;
+    }
+
+    .footer-inner .logo {
+        width: 100%;
+    }
+
+    .auth-page {
+        padding: 13px;
+    }
+
+    .auth-logo {
+        margin-bottom: 12px;
+    }
+
+    .auth-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-art {
+        padding: 30px 25px;
+        min-height: 285px;
+    }
+
+    .auth-art h1 {
+        font-size: 43px;
+        margin: 12px 0;
+    }
+
+    .auth-art blockquote {
+        margin-top: 25px;
+        font-size: 15px;
+    }
+
+    .auth-panel {
+        padding: 30px 23px;
+    }
+
+    .auth-form h2 {
+        font-size: 30px;
+    }
+
+    .dashboard-main {
+        padding-top: 38px;
+    }
+
+    .dash-heading h1,
+    .editor-heading h1 {
+        font-size: 38px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 9px;
+    }
+
+    .stats article {
+        padding: 15px;
+    }
+
+    .stats article:last-child {
+        grid-column: span 2;
+    }
+
+    .list-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .editor-main {
+        padding-top: 35px;
+    }
+
+    .editor-heading {
+        text-align: left;
+    }
+
+    .editor {
+        padding: 20px 16px;
+    }
+
+    .two-col {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .editor-bottom {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .editor-bottom .btn {
+        width: 100%;
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+    * {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}

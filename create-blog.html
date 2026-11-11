@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Blog | Inkspire</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <nav class="nav container">
+
+        <a class="logo" href="index.html">
+            <span>i</span> inkspire.
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Explore</a>
+            <a href="dashboard.html">My dashboard</a>
+        </div>
+
+        <div class="nav-actions">
+            <a class="btn btn-outline" href="dashboard.html">
+                ← Dashboard
+            </a>
+        </div>
+
+    </nav>
+
+</header>
+
+<main class="container editor-main">
+
+    <div class="editor-heading">
+
+        <span class="eyebrow">THE PAGE IS YOURS</span>
+
+        <h1>
+            Write something <em>meaningful.</em>
+        </h1>
+
+        <p class="muted">
+            Don't worry about perfect. Just begin.
+        </p>
+
+    </div>
+
+    <form id="blogForm" class="editor">
+
+        <label>
+            Story title
+
+            <input
+                id="blogTitle"
+                type="text"
+                maxlength="90"
+                placeholder="Give your story a title..."
+                required
+            >
+        </label>
+
+        <div class="two-col">
+
+            <label>
+                Category
+
+                <select id="blogCategory" required>
+                    <option value="">Choose a category</option>
+                    <option>Technology</option>
+                    <option>Lifestyle</option>
+                    <option>Creativity</option>
+                    <option>Education</option>
+                    <option>Travel</option>
+                </select>
+            </label>
+
+            <label>
+                Cover image URL
+                <small>(optional)</small>
+
+                <input
+                    id="blogImage"
+                    type="url"
+                    placeholder="https://example.com/image.jpg"
+                >
+            </label>
+
+        </div>
+
+        <div id="imagePreview" class="image-preview">
+            Cover image preview will appear here
+        </div>
+
+        <label>
+            Your story
+
+            <textarea
+                id="blogContent"
+                rows="12"
+                minlength="20"
+                placeholder="Start writing your thoughts here..."
+                required
+            ></textarea>
+        </label>
+
+        <div class="editor-bottom">
+
+            <small id="wordCount">0 words</small>
+
+            <button class="btn btn-primary" type="submit">
+                Publish story ↗
+            </button>
+
+        </div>
+
+        <p id="blogMessage" class="message"></p>
+
+    </form>
+
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/blog.js"></script>
+
+</body>
+</html>

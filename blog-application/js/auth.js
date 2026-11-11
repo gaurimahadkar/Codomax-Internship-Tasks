@@ -1,0 +1,9 @@
+const readUsers=()=>{try{return JSON.parse(localStorage.getItem("inkspireUsers"))||[]}catch{return[]}};
+const writeUsers=users=>localStorage.setItem("inkspireUsers",JSON.stringify(users));
+const showMessage=(id,message,success=false)=>{const el=document.getElementById(id);if(el){el.textContent=message;el.className="form-message"+(success?" success":"")}};
+document.addEventListener("DOMContentLoaded",()=>{
+ const register=document.getElementById("registerForm");
+ if(register)register.addEventListener("submit",e=>{e.preventDefault();const name=document.getElementById("registerName").value.trim(),email=document.getElementById("registerEmail").value.trim().toLowerCase(),password=document.getElementById("registerPassword").value,confirm=document.getElementById("confirmPassword").value; if(password!==confirm)return showMessage("registerMessage","Passwords do not match.");const users=readUsers();if(users.some(u=>u.email===email))return showMessage("registerMessage","An account with this email already exists.");users.push({name,email,password});writeUsers(users);localStorage.setItem("inkspireCurrentUser",JSON.stringify({name,email}));showMessage("registerMessage","Account created! Redirecting...",true);setTimeout(()=>location.href="dashboard.html",700)});
+ const login=document.getElementById("loginForm");
+ if(login)login.addEventListener("submit",e=>{e.preventDefault();const email=document.getElementById("loginEmail").value.trim().toLowerCase(),password=document.getElementById("loginPassword").value;const user=readUsers().find(u=>u.email===email&&u.password===password);if(!user)return showMessage("loginMessage","Email or password is incorrect.");localStorage.setItem("inkspireCurrentUser",JSON.stringify({name:user.name,email:user.email}));showMessage("loginMessage","Login successful! Redirecting...",true);setTimeout(()=>location.href="dashboard.html",600)});
+});

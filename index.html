@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inkspire | Blog Application</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="nav container">
+
+        <a class="logo" href="index.html">
+            <span>i</span> inkspire.
+        </a>
+
+        <button class="menu-btn">☰</button>
+
+        <div class="nav-links">
+            <a class="active" href="index.html">Home</a>
+            <a href="#stories">Explore</a>
+            <a href="#about">About</a>
+        </div>
+
+        <div class="nav-actions">
+            <a class="btn btn-outline" href="login.html">Log in</a>
+            <a class="btn btn-primary" href="register.html">Start Writing ↗</a>
+        </div>
+
+    </nav>
+</header>
+
+<main>
+
+<section class="hero container">
+
+    <div>
+        <span class="eyebrow">✦ A HOME FOR IDEAS</span>
+
+        <h1>
+            Every story<br>
+            starts with <em>you.</em>
+        </h1>
+
+        <p class="lead">
+            A thoughtful space to share what you know,
+            explore fresh perspectives, and connect
+            through stories that matter.
+        </p>
+
+        <div class="hero-actions">
+            <a href="register.html" class="btn btn-primary btn-lg">
+                Write your first story ↗
+            </a>
+
+            <a href="#stories" class="text-link">
+                Explore stories ↓
+            </a>
+        </div>
+
+        <p class="hero-caption">
+            ✍ Read. Learn. Create. Ideas bring us together.
+        </p>
+    </div>
+
+    <div class="hero-art">
+
+        <div class="art-circle"></div>
+
+        <div class="paper">
+            <small>THE CREATIVE NOTEBOOK</small>
+            <hr>
+
+            <strong>
+                Make room<br>
+                for wonder.
+            </strong>
+
+            <div class="paper-foot">
+                01 / 04 <span>✳</span>
+            </div>
+        </div>
+
+        <span class="float-tag tag-a">✦ Your voice matters</span>
+        <span class="float-tag tag-b">Ideas in motion ↗</span>
+
+    </div>
+
+</section>
+
+<section class="values">
+    <div class="container value-grid">
+
+        <div>
+            <b>Curiosity</b>
+            <span>is always welcome</span>
+        </div>
+
+        <div>
+            <b>Creativity</b>
+            <span>has no limits</span>
+        </div>
+
+        <div>
+            <b>Community</b>
+            <span>makes ideas grow</span>
+        </div>
+
+    </div>
+</section>
+
+<section class="section container" id="stories">
+
+    <div class="section-head">
+
+        <div>
+            <span class="eyebrow">FRESH PERSPECTIVES</span>
+
+            <h2>
+                Stories to spark<br>
+                <em>your curiosity.</em>
+            </h2>
+        </div>
+
+        <a href="register.html" class="text-link">
+            Share your story ↗
+        </a>
+
+    </div>
+
+    <div class="filters">
+        <b>DISCOVER</b>
+
+        <button class="filter active" data-filter="All">All stories</button>
+        <button class="filter" data-filter="Technology">Technology</button>
+        <button class="filter" data-filter="Lifestyle">Lifestyle</button>
+        <button class="filter" data-filter="Creativity">Creativity</button>
+    </div>
+
+    <div class="blog-grid" id="homeBlogGrid"></div>
+
+</section>
+
+<section class="cta" id="about">
+
+    <div class="container cta-inner">
+
+        <div>
+            <span class="eyebrow light">YOUR NEXT CHAPTER</span>
+
+            <h2>
+                Have an idea?<br>
+                <em>Give it a voice.</em>
+            </h2>
+
+            <p>Start with a blank page. The rest is yours to create.</p>
+        </div>
+
+        <a href="register.html" class="btn btn-light btn-lg">
+            Join the community ↗
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+
+        <a class="logo" href="index.html">
+            <span>i</span> inkspire.
+        </a>
+
+        <small>
+            Made for curious minds. © <span id="year"></span> Inkspire.
+        </small>
+
+        <div>
+            <a href="login.html">Log in</a>
+            <a href="register.html">Join us</a>
+        </div>
+
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
